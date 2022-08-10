@@ -9,8 +9,18 @@
 <link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/common_images-670d97636259cafc355c94fc43e871d7.css" />
 <script src="https://s.gr-assets.com/assets/desktop/libraries-c07ee2e4be9ade4a64546b3ec60b523b.js"></script>
 <script src="https://s.gr-assets.com/assets/application-12752f3bd84e3be2c5348daac5064e55.js"></script>
+<script>
+const spoilers = document.getElementsByClassName("spoilerContainer");
+function spoil() {
+  for (let i = 0; i < spoilers.length; i++) {
+    spoilers[i].style = "display:block";
+  }
+}
+</script>
 </head>
 <body>
+<button onclick="spoil()" style="border: 3px solid red">Show all spoilers</button>
+<br><br>
 <div class='communityQuestionAndAnswer'>
 <div class='communityQuestion'>
 <div class='questionText'><a href=
